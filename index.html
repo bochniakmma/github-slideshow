@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Title -->
+  <title>
+    Kyle Bochniak &#124; Personal & Online Training with Professional Fighter and Certified Trainer Kyle 'Crash' Bochniak.
+  </title>
+
+  <!-- Description -->
+  <meta name="description" content="Personal & Online Training with Professional Fighter and Certified Trainer Kyle 'Crash' Bochniak."/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pmd8kee.css">
+
+  <!-- Javascript  -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  <script src="/assets/js/main.js"></script>
+  
+    <script type="text/javascript" src="/assets/js/home.js"></script>
+    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+  
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#141414">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#dcdcdc">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#dcdcdc">
+
+  <!-- Cookie-specific scripts  -->
+  <script type="text/javascript">
+  // Basic Cookie Functions
+  //////////////////////////////////////////////////////////////////////////////
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function deleteCookie(cname) {
+    document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  }
+
+  // Control Popup
+  //////////////////////////////////////////////////////////////////////////////
+  function askPermission() {
+    document.getElementById('cookieBar').style.display = 'block';
+  }
+
+  function hideCookieBar() {
+    document.getElementById('cookieBar').style.display = 'none';
+  }
+
+  function givePermission() {
+    setCookie('tracking', true, 365);
+    hideCookieBar();
+  }
+
+  function removePermission() {
+    setCookie('tracking', false, 30);
+    hideCookieBar();
+  }
+
+  // Fire on Load
+  //////////////////////////////////////////////////////////////////////////////
+  document.addEventListener("DOMContentLoaded", function() {
+    var cookie = getCookie('tracking');
+    if (cookie == '' || cookie == null) {
+      askPermission();
+    }
+  });
+</script>
+
+<div id="cookieBar">
+  <div class="cookieBar__text">
+    <p>
+      This site uses cookies to improve your experience.
+    </p>
+    <div class="cookieBar__buttons">
+      <div class="cookieBar__button" id="accept" onclick="givePermission();">
+        Accept
+      </div>
+      <div class="cookieBar__button" id="deny" onclick="removePermission();">
+        Deny
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  #cookieBar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    z-index: 999;
+  }
+
+  .cookieBar__text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size: 12px;
+  }
+
+  .cookieBar__text p {
+    color: white;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    float: left;
+    line-height: 1;
+  }
+
+  .cookieBar__button {
+    padding: 5px 15px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 100px;
+  }
+
+  .cookieBar__buttons {
+    display: inline-block;
+  }
+
+  #accept {
+    background-color: white;
+    color: black;
+  }
+
+  #accept:hover {
+    background-color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+  }
+
+  #deny {
+    background-color: black;
+    color: white;
+  }
+
+  #deny:hover {
+    color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+  }
+</style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167913795-1"></script>
+  <script type="text/javascript">
+    var cookie = getCookie('tracking');
+    if (cookie == 'true') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-167913795-1');
+    };
+  </script>
+</head>
+
+  <body>
+
+    
+  <header id="header">
+
+  <section>
+    <a href="/">
+      
+        <h2 class="header__logo" id="header__logo">
+          Kyle<br>
+          Bochniak
+        </h2>
+      
+    </a>
+    <div class="header__links">
+      <a href="http://staging.kylebochniak.com/#courses" id="courses__link" class='header__link'>
+        <h3>
+          Challenge
+        </h3>
+      </a>
+      <a href="http://staging.kylebochniak.com/#coaching" id="coaching__link" class='header__link'>
+        <h3>
+          Coaching
+        </h3>
+      </a>
+      
+        <a href="http://staging.kylebochniak.com/membership" class='header__link'>
+      
+        <h3>
+          Members
+        </h3>
+      </a>
+      <!-- 
+        <a href="http://staging.kylebochniak.com/education" class='header__link'>
+      
+        <h3>
+          Education
+        </h3>
+      </a> -->
+      
+        <a href="http://staging.kylebochniak.com/media" class='header__link'>
+      
+        <h3>
+          Media
+        </h3>
+      </a>
+      
+        <a href="http://staging.kylebochniak.com/news" class='header__link'>
+      
+        <h3>
+          News
+        </h3>
+      </a>
+    </div>
+  </section>
+</header>
+
+
+    <section class="masthead">
+      <div class="masthead__image" style="background-image: url('/uploads/kyleBochniak_header.jpg');">
+      </div>
+      <div class="masthead__text animatable">
+        <h1 class="masthead__title animatable">
+          Crash
+        </h1>
+      </div>
+    </section>
+
+    <div class="scroller">
+
+      <section class="intro wrapper grid">
+        <h1 class="intro__title col-12 animatable">
+          YOU UP FOR A CHALLENGE?
+        </h1>
+        <div class="intro__body col-4">
+          Sometimes we need to get out of our comfort zone to better ourselves. I challenge you to workout with me 4 days a week for 8 weeks! We will Burn Fat, Increase Endurance, Gain Muscle and to transform ourselves mentally and physically. Are you READY?
+        </div>
+        <div class="intro__video col-8">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8hKnwUiAwdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="courses wrapper grid" id="courses">
+        <h1 class="challenge__title col-12 animatable">
+          8 week crash challenge
+        </h1>
+        <div class="challenge__image col-8" style="background-image: url('/uploads/DE6D70FF-67FF-42AA-BE2C-CB8A3883E86F.jpeg');">
+        </div>
+        <div class="challenge__text col-4">
+          <h2>
+            GET IN THE BEST SHAPE OF YOUR LIFE WITH MY 8 WEEK CRASH CHALLENGE!
+          </h2>
+          <p>
+            The CHALLENGE is 8 weeks long and has 4 workouts per week that range from 45 to 60 minutes in duration. Each week you’ll get full length videos of the workouts where you'll be able to follow along with me and get that 1 on 1 experience all online! <br />
+<br />
+All the workouts can be done at home! The program is Split into 3 phases.<br />
+<br />
+ Weeks 1-3 Is all body weight exercises, calisthenics, static strength & conditioning to build a strong foundation. <br />
+<br />
+Weeks 4-6 We really kick it up a notch and will focus on explosiveness, Strength & endurance. We will Use a sand bag, weighted vest, ab roller and a pair of light dumbbells. <br />
+<br />
+Weeks 6-8 Is our peaking phase and will be a living hell. We will focus a lot on sprint repeats, ballistic movements and most of all conditioning.<br />
+<br />
+If you're serious about your fitness.<br />
+If you want to become the best version of yourself.<br />
+If you want to learn what it takes to train like an athlete.<br />
+<br />
+ Then sign up now!<br />
+<br />
+PRE-ORDER and reserve your spot NOW!<br />
+<br />
+With your receipt you’ll receive:<br />
+Link to ‘Crash Challenge’ Facebook community group<br />
+Link to set up Apps<br />
+
+          </p>
+        </div>
+        <h2 class="challenge__details__title col-4">
+          Details:
+        </h2>
+        <div class="challenge__details__section col-4">
+          <h3 class="challenge__details__section--title">
+            4 days per week
+          </h3>
+          <h3 class="challenge__details__section--title">
+            Required Equipment
+          </h3>
+          <ul>
+            
+              <li>
+                Jump Rope
+              </li>
+            
+              <li>
+                2lb. Dumbbells
+              </li>
+            
+              <li>
+                Ab Roller
+              </li>
+            
+              <li>
+                Weighted Vest
+              </li>
+            
+              <li>
+                Light Resistance Band
+              </li>
+            
+              <li>
+                Sandbag with Handles
+              </li>
+            
+          </ul>
+        </div>
+        <div class="challenge__details__section col-4">
+          <h3 class="challenge__details__section--title">
+            Includes
+          </h3>
+          <ul>
+            
+              <li>
+                Diet Plan
+              </li>
+            
+              <li>
+                Full Length Workout Videos
+              </li>
+            
+              <li>
+                Private Facebook Community Group
+              </li>
+            
+              <li>
+                24/7 Online Coaching
+              </li>
+            
+              <li>
+                App to access program
+              </li>
+            
+          </ul>
+        </div>
+        <h2 class="challenge__countdown__title col-4">
+           next challenge starts in:
+        </h2>
+        <div class="challenge__countdown__number col-2">
+          <h1 id="countdown__days">
+            0
+          </h1>
+          <h3>
+            Days
+          </h3>
+        </div>
+        <div class="challenge__countdown__number col-2">
+          <h1 id="countdown__hours">
+            0
+          </h1>
+          <h3>
+            Hours
+          </h3>
+        </div>
+        <div class="challenge__countdown__number col-2">
+          <h1 id="countdown__mins">
+            0
+          </h1>
+          <h3>
+            Minutes
+          </h3>
+        </div>
+        <div class="challenge__countdown__number col-2">
+          <h1 id="countdown__secs">
+            0
+          </h1>
+          <h3>
+            Seconds
+          </h3>
+        </div>
+        <div class="buy-button col-12">
+          <script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/yQLi">Enroll Now</a>
+        </div>
+        <a class="pill col-12" href="https://calendly.com/crashcamp/30min?month=2020-07" target="_blank">
+          <h3>
+            Book a Free Consultation
+          </h3>
+        </a>
+
+        <script>
+          var startDate = "2020-09-07 07:00:00 +0000";
+          var countDownDate = new Date(startDate).getTime();
+          var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if (distance > 0) {
+              document.getElementById("countdown__days").innerHTML = days;
+              document.getElementById("countdown__hours").innerHTML = hours;
+              document.getElementById("countdown__mins").innerHTML = minutes;
+              document.getElementById("countdown__secs").innerHTML = seconds;
+            } else {
+              clearInterval(x);
+              document.getElementById("countdown__days").innerHTML = "0";
+              document.getElementById("countdown__hours").innerHTML = "0";
+              document.getElementById("countdown__mins").innerHTML = "0";
+              document.getElementById("countdown__secs").innerHTML = "0";
+            }
+          }, 1000);
+        </script>
+
+      </section>
+
+      <section class="testimonials wrapper grid">
+          <h1 class="testimonials__title col-12 animatable">
+            Testimonials
+          </h1>
+        <div class="slick col-12">
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "Training with Kyle is fun and challenging. He makes you leave feeling like a beast. You can expect to hit your peak fitness with what ever session you decide to do with Kyle and he leaves you wanting to come back for more."
+            </p>
+            <p class="testimonials__entry__name">
+              —Henry Gailunas
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "Kyle is a fantastic coach and a great person who has helped me a lot. The experience training with Kyle online has been incredible. He is a really good coach who knows how to tailor a program to you. Even though Kyle is a martial artist he has really helped me perform better as a goalkeeper. As an athlete Kyle got me to perform at my best and improved my speed, flexibility and overall strength. Kyle is detailed specific and focuses on a lot on the finer things that separates him from other coaches. He showed genuine interest in my fitness goals and made time to answer all my questions. I'd highly recommend training with Kyle!"
+            </p>
+            <p class="testimonials__entry__name">
+              —Rasmus Jepsen-Jacob
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "Kyle is very talented and professional trainer! I loved my training session and the workout and meal plan that he put together for me. It was simple but yet extremely effective and easy to follow! He showed me workout techniques that targeted my arms and core that are helping me to get ready for my big wedding day!"
+            </p>
+            <p class="testimonials__entry__name">
+              —Christine Gillis
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "Kyle is experienced in helping you reach whatever goal you have in mind. For me I wanted to gain weight and muscle mass and he was able to help me with that all while training me online. If you follow his programs you'll see results and I cant believe how fast I saw mine. I felt overall so much better and Kyle helped me build confidence. "
+            </p>
+            <p class="testimonials__entry__name">
+              —Dexter Talbert
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "Kyle's program was the first program that really pushed me to lose the weight that I've wanted to for years. The routines had lots variety between balance, cardio, and strength training which really helped me become an overall better athlete and gave me more confidence in my jiu-jitsu and striking. Kyle is a great supporter and I couldn't be more thankful, I lost 10 pounds in a month!"
+            </p>
+            <p class="testimonials__entry__name">
+              —Hayden Calder
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "Over the course of years training and learning in the field of combat sports, things really made sense to me when I started training with Kyle. Immediately I noticed that his training style and philosophy is a different beast and he lays the ground work out immediately. It's the first time I learned about mental stamina as well, Kyle pushes you to uncomfortable places which builds a better you. Training is no longer a typical session of mitt work, it has now evolved into a learning session that is fun and keeps me ready for the next chapter. I highly recommend training with Kyle to get in shape and really learn the ins and outs about fitness."
+            </p>
+            <p class="testimonials__entry__name">
+              —Keith C
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "I started training with Kyle about 2 months ago and I'm beyond grateful and happy to have the opportunity to continue training with him as my coach. Physically I feel faster and way more sharp. My cardio is being pushed and mentally I haven't seen more clear and it's created so much positive energy for me, I couldn't ask for a better trainer. I've been in and out a few gyms being an athlete but this is where I'll stay thanks to coach. He's got the recipe, you just need to put in the work. I can't wait for the future."
+            </p>
+            <p class="testimonials__entry__name">
+              —Adam Spencer
+            </p>
+          </div>
+        
+          <div class="testimonials__entry">
+            <p class="testimonials__entry__quote">
+              "I had a few years training in Muay Thai before I met Kyle, he brought me to a new world. He knows everything from Boxing, Jiu Jitsu,  Muay Thai, Wrestling and MMA. He's helped me find and push to new limits and inspires me along the way. No matter if you're a rookie or a veteran, Kyle knows the game and will teach you everything you need to know about technique, conditioning and mindset. I look forward to keep training with Kyle."
+            </p>
+            <p class="testimonials__entry__name">
+              —Shuhan Xie
+            </p>
+          </div>
+        
+      </div>
+      </section>
+
+      <section class="about wrapper grid">
+        <div class="about__text col-4">
+          <h2 class="about__text__title">
+            About me
+          </h2>
+          <p class="about__text__body">
+            I’m a professional fighter, UFC vet, martial arts & conditioning specialist. I’ve dedicated over a decade to studying mixed martial arts, fitness and nutrition. I’ve been through it all and tried it all, I know what works and what doesn’t. I’m excited to share my knowledge with anyone who’s eager and motivated to become the best version of themselves. 
+          </p>
+        </div>
+        <div class="about__image col-8">
+          <img src="/uploads/kyleBochniak-13-ef203f.jpg"/>
+        </div>
+      </section>
+
+      <section class="training wrapper grid animatable" id="coaching">
+        <h1 class="training__title col-12">
+          Want private training? 
+        </h1>
+        <a class="training__button pill filled col-6-4 " href="https://square.site/book/JWHTZFCPCVG53/kyle-bochniak-training" target="_blank">
+          <h3>
+            Book an appointment
+          </h3>
+        </a>
+      </section>
+
+    </div>
+
+    <footer>
+  <section class="footer wrapper grid">
+    <div class="footer__item col-3">
+      <h3>
+        Contact
+      </h3>
+      <p>
+        info@kylebochniak.com
+      </p>
+    </div>
+
+    <div class="footer__item col-3">
+      <h3>
+        Resources
+      </h3>
+      <ul>
+        <li>
+          <a href="/privacy">
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          Site by <a href="https://aidensymes.com/" target="_blank">Aiden Symes</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__item col-3">
+      <h3>
+        Affiliates
+      </h3>
+      <ul>
+        
+        <li>
+          <a href="https://originmaine.com/?ref=CRASH&utm_source=affiliate" target="_blank">
+            Origin
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="footer__item footer__logo col-3">
+      <a href="/">
+        
+          <img class="logo__footer" src="/uploads/Bochniak%20Logo-239a20.jpg"/>
+        
+      </a>
+      
+        <a href="https://www.instagram.com/kylebochniakufc/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      
+        <a href="https://www.facebook.com/kylekillerbeebochniak" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      
+        <a href="https://www.youtube.com/channel/UCv9tMvmSOO7c7pQ3BcKlasA?view_as=subscriber" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      
+        <a href="https://www.twitter.com/kylebochniak" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+      <p>
+        All rights reserved, Kyle Bochniak, 2021.
+      </p>
+    </div>
+
+    <div class="footer__cert col-12">
+      <a href="https://www.issaonline.com/company/" target="_blank">
+        <img src="/uploads/ISSA_logo.png"/>
+      </a>
+    </div>
+  </section>
+</footer>
+
+  </body>
+</html>

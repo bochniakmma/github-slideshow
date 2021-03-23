@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Title -->
+  <title>
+    Kyle Bochniak &#124; Personal & Online Training with Professional Fighter and Certified Trainer Kyle 'Crash' Bochniak.
+  </title>
+
+  <!-- Description -->
+  <meta name="description" content="Personal & Online Training with Professional Fighter and Certified Trainer Kyle 'Crash' Bochniak."/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pmd8kee.css">
+
+  <!-- Javascript  -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  <script src="/assets/js/main.js"></script>
+  
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#141414">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#dcdcdc">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#dcdcdc">
+
+  <!-- Cookie-specific scripts  -->
+  <script type="text/javascript">
+  // Basic Cookie Functions
+  //////////////////////////////////////////////////////////////////////////////
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function deleteCookie(cname) {
+    document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  }
+
+  // Control Popup
+  //////////////////////////////////////////////////////////////////////////////
+  function askPermission() {
+    document.getElementById('cookieBar').style.display = 'block';
+  }
+
+  function hideCookieBar() {
+    document.getElementById('cookieBar').style.display = 'none';
+  }
+
+  function givePermission() {
+    setCookie('tracking', true, 365);
+    hideCookieBar();
+  }
+
+  function removePermission() {
+    setCookie('tracking', false, 30);
+    hideCookieBar();
+  }
+
+  // Fire on Load
+  //////////////////////////////////////////////////////////////////////////////
+  document.addEventListener("DOMContentLoaded", function() {
+    var cookie = getCookie('tracking');
+    if (cookie == '' || cookie == null) {
+      askPermission();
+    }
+  });
+</script>
+
+<div id="cookieBar">
+  <div class="cookieBar__text">
+    <p>
+      This site uses cookies to improve your experience.
+    </p>
+    <div class="cookieBar__buttons">
+      <div class="cookieBar__button" id="accept" onclick="givePermission();">
+        Accept
+      </div>
+      <div class="cookieBar__button" id="deny" onclick="removePermission();">
+        Deny
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  #cookieBar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    z-index: 999;
+  }
+
+  .cookieBar__text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size: 12px;
+  }
+
+  .cookieBar__text p {
+    color: white;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    float: left;
+    line-height: 1;
+  }
+
+  .cookieBar__button {
+    padding: 5px 15px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 100px;
+  }
+
+  .cookieBar__buttons {
+    display: inline-block;
+  }
+
+  #accept {
+    background-color: white;
+    color: black;
+  }
+
+  #accept:hover {
+    background-color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+  }
+
+  #deny {
+    background-color: black;
+    color: white;
+  }
+
+  #deny:hover {
+    color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+  }
+</style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167913795-1"></script>
+  <script type="text/javascript">
+    var cookie = getCookie('tracking');
+    if (cookie == 'true') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-167913795-1');
+    };
+  </script>
+</head>
+
+  <body>
+    
+  <header id="header" class="page__header">
+
+  <section>
+    <a href="/">
+      
+        <h2 class="header__logo" id="header__logo">
+          Kyle<br>
+          Bochniak
+        </h2>
+      
+    </a>
+    <div class="header__links">
+      <a href="http://staging.kylebochniak.com/#courses" id="courses__link" class='header__link'>
+        <h3>
+          Challenge
+        </h3>
+      </a>
+      <a href="http://staging.kylebochniak.com/#coaching" id="coaching__link" class='header__link'>
+        <h3>
+          Coaching
+        </h3>
+      </a>
+      
+        <a href="http://staging.kylebochniak.com/membership" class='header__link'>
+      
+        <h3>
+          Members
+        </h3>
+      </a>
+      <!-- 
+        <a href="http://staging.kylebochniak.com/education" class='header__link'>
+      
+        <h3>
+          Education
+        </h3>
+      </a> -->
+      
+        <a href="http://staging.kylebochniak.com/media" class='header__link'>
+      
+        <h3>
+          Media
+        </h3>
+      </a>
+      
+        <a href="http://staging.kylebochniak.com/news" class='header__link'>
+      
+        <h3>
+          News
+        </h3>
+      </a>
+    </div>
+  </section>
+</header>
+
+
+    <section class="post wrapper grid">
+      <div class="post__header__image col-12" style="background-image: url('/uploads/kyleBochniak-20-060de5.jpg');">
+      </div>
+      <div class="col-12">
+
+        <ul class="blog__categories col-12">
+          
+            <a class="blog__category pill" id="" href="http://staging.kylebochniak.com/education#_Striking">
+              <li>
+                <p>
+                Striking
+                </p>
+              </li>
+            </a>
+          
+        </ul>
+
+        <p class="post__date">
+          05.29.2020
+        </p>
+        <h2 class="post__title">
+          New Post
+        </h2>
+      </div>
+      <div class="post__content col-6">
+        <p>Testing testing</p>
+
+      </div>
+    </section>
+    <section class="recent__posts wrapper grid">
+      <h2 class="col-12">
+        More Tips
+      </h2>
+      
+      
+        
+          
+    </section>
+    <footer>
+  <section class="footer wrapper grid">
+    <div class="footer__item col-3">
+      <h3>
+        Contact
+      </h3>
+      <p>
+        info@kylebochniak.com
+      </p>
+    </div>
+
+    <div class="footer__item col-3">
+      <h3>
+        Resources
+      </h3>
+      <ul>
+        <li>
+          <a href="/privacy">
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          Site by <a href="https://aidensymes.com/" target="_blank">Aiden Symes</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__item col-3">
+      <h3>
+        Affiliates
+      </h3>
+      <ul>
+        
+        <li>
+          <a href="https://originmaine.com/?ref=CRASH&utm_source=affiliate" target="_blank">
+            Origin
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="footer__item footer__logo col-3">
+      <a href="/">
+        
+          <img class="logo__footer" src="/uploads/Bochniak%20Logo-239a20.jpg"/>
+        
+      </a>
+      
+        <a href="https://www.instagram.com/kylebochniakufc/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      
+        <a href="https://www.facebook.com/kylekillerbeebochniak" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      
+        <a href="https://www.youtube.com/channel/UCv9tMvmSOO7c7pQ3BcKlasA?view_as=subscriber" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      
+        <a href="https://www.twitter.com/kylebochniak" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+      <p>
+        All rights reserved, Kyle Bochniak, 2021.
+      </p>
+    </div>
+
+    <div class="footer__cert col-12">
+      <a href="https://www.issaonline.com/company/" target="_blank">
+        <img src="/uploads/ISSA_logo.png"/>
+      </a>
+    </div>
+  </section>
+</footer>
+
+  </body>
+</html>
